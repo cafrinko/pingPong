@@ -22,6 +22,7 @@ function pingPong(num) {
 //user interface logic
 $(document).ready(function() {
   $("form#input").submit(function(event) {
+    $("#result").empty();
     event.preventDefault();
     var numInput = $("input#num").val();
     var result = pingPong(numInput)
